@@ -41,9 +41,7 @@ Plug 'vim-airline/vim-airline-themes'
 "Plug 'jiangmiao/auto-pairs' " 自动补全括号的插件，包括小括号，中括号，以及花括号
 
 Plug 'godlygeek/tabular' " 快捷对齐 :Tabularize /\/\/  :Tabularize /{pattern}
-Plug 'preservim/vim-markdown'
 " markdown
-" Plug 'tpope/vim-markdown' " 需要打开代理安装
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' } " https://github.com/iamcco/markdown-preview.nvim 推荐使用yarn方式，另一种有问题
 
 " ## git
@@ -90,10 +88,16 @@ Plug 'machakann/vim-highlightedyank' " 高亮复制行
 Plug 'tpope/vim-unimpaired' " [b 切换到前一个 ]b 切换到下一个
 Plug 'editorconfig/editorconfig-vim'
 " 窗口切换
+" code color
+Plug 'ap/vim-css-color'
 call plug#end()
 " }}}
-
 " global
+" 设置主题 主题如果放在coc后边，会覆盖coc.nvim中的popup menu颜色
+" set background=dark
+" colorscheme gruvbox
+colorscheme PaperColor
+
 let g:python3_host_prog = '/usr/bin/python3'
 inoremap jk <esc>
 
@@ -139,10 +143,10 @@ let g:airline#extensions#tabline#formatter = 'default'
 " 关闭当前buffer
 nnoremap <leader>bq :bp <BAR> bd #<CR>
 " vim-airline themes
-let g:airline_theme='one'
+let g:airline_theme='onedark'
 " }}}
 
-" iamcco/markdown-preview.nvim
+" markdown
 nnoremap <leader>mp :MarkdownPreviewToggle<CR>
 
 " tagbar
@@ -184,6 +188,11 @@ autocmd FileType go nmap <Leader>i <Plug>(go-info)
 " }}}
 
 "coc {{{
+" https://github.com/neoclide/coc.nvim/issues/3980
+" https://github.com/neoclide/coc.nvim/issues/4031
+hi CocSearch ctermfg=12 guifg=#18A3FF
+hi CocMenuSel ctermbg=19 guibg=#222222
+
 " Some servers have issues with backup files, see #649.
 set nobackup
 set nowritebackup
@@ -289,12 +298,6 @@ nnoremap ]e  :<c-u>execute 'move +'. v:count1<cr>
 vnoremap <leader>y "+y
 " paste: 粘贴系统剪贴板
 nnoremap <leader>p "*p
-
-" 设置主题
-" colorscheme gruvbox
-colorscheme PaperColor
-" set termguicolors " 开启24bit的颜色,颜色更亮
-set background=dark
 
 " 解决nvim自动隐藏json的"
 let g:vim_json_conceal=0
