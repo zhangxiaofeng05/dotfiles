@@ -294,9 +294,9 @@ nmap <silent> <C-j> <Plug>(ale_next_wrap)
 " 快速把当前行上移或下移一行 比如连续按下 2 ] e 就可以把当前行向下移动两行
 nnoremap [e  :<c-u>execute 'move -1-'. v:count1<cr>
 nnoremap ]e  :<c-u>execute 'move +'. v:count1<cr>
-" copy: 复制内容到系统的剪贴板
-vnoremap <leader>y "+y
-" paste: 粘贴系统剪贴板
+" copy: 粘贴到系统剪贴板 "*y | "+y 二选一即可
+vnoremap <leader>y "*y
+" paste: 从系统剪贴板粘贴 "*p | "+p 二选一即可
 nnoremap <leader>p "*p
 
 " 解决nvim自动隐藏json的"
