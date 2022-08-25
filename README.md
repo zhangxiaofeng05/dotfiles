@@ -13,8 +13,15 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 ```
 ln -s ~/openSource/dotfiles/nvim/ ~/.config/nvim
 ```
+
 ## git
 ### ln
 ```
 ln -s ~/openSource/dotfiles/.gitconfig ~/.gitconfig
+```
+
+## tmux
+### ln
+```
+ln -s ~/openSource/dotfiles/.tmux.conf ~/.tmux.conf
 ```
