@@ -24,7 +24,8 @@ Plug 'mhinz/vim-startify'
 Plug 'kdheepak/lazygit.nvim'
 
 " mulit colorscheme
-Plug 'rafi/awesome-vim-colorschemes'
+" Plug 'rafi/awesome-vim-colorschemes'
+Plug 'lifepillar/vim-gruvbox8'
 " terminal
 Plug 'voldikss/vim-floaterm'
 
@@ -68,7 +69,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " go to definition for protobuf messages :CocInstall coc-protobuf
 " json :CocInstall coc-json
 " vimscript :CocInstall coc-vimlsp
+" toml :CocInstall coc-toml
 Plug 'honza/vim-snippets' " snippets with Coc: run command(CocInstall coc-snippets)
+Plug 'sbdchd/neoformat' " format code
 Plug 'preservim/tagbar' "Tagbar: a class outline viewer for Vim
 " go: Struct split and join  gS:split  gJ:join
 Plug 'AndrewRadev/splitjoin.vim'
@@ -90,13 +93,16 @@ Plug 'editorconfig/editorconfig-vim'
 " 窗口切换
 " code color
 Plug 'ap/vim-css-color'
+" bookmark
+Plug 'MattesGroeger/vim-bookmarks'
 call plug#end()
 " }}}
 " global
 " 设置主题 主题如果放在coc后边，会覆盖coc.nvim中的popup menu颜色
 " set background=dark
 " colorscheme gruvbox
-colorscheme PaperColor
+" colorscheme PaperColor
+colorscheme gruvbox8
 
 let g:python3_host_prog = '/usr/bin/python3'
 inoremap jk <esc>
@@ -133,6 +139,7 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 nnoremap <leader>nt :NERDTreeToggle<CR>
 nnoremap <leader>nf :NERDTreeFind<CR>
 let NERDTreeShowHidden=1
+let NERDTreeIgnore = [ '\.idea','\.vscode','\.DS_Store' ]
 " }}}
 
 " vim-airline {{{
@@ -149,8 +156,6 @@ let g:airline_theme='onedark'
 " markdown
 nnoremap <leader>mp :MarkdownPreviewToggle<CR>
 
-" tagbar
-nnoremap <leader>tb :Tagbar<CR>
 " vim-floaterm
 let g:floaterm_keymap_new = '<Leader>ft'
 let g:floaterm_keymap_toggle = '<Leader>t'
@@ -263,6 +268,11 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 set listchars=tab:\¦\ ,trail:■,extends:>,precedes:<,nbsp:+
 set list
 hi SpecialKey ctermfg=239 ctermbg=NONE
+
+" neoformat
+nnoremap <leader>cf :Neoformat<cr>
+" tagbar
+nnoremap <leader>tb :Tagbar<CR>
 
 " dense-analysis/ale {{{
 let g:ale_linters_explicit = 1
