@@ -31,7 +31,7 @@ Plug 'voldikss/vim-floaterm'
 
 Plug 'preservim/nerdtree' " NERDTree 文件目录树
 Plug 'Xuyuanp/nerdtree-git-plugin' "NERDTree显示git信息
-Plug 'ryanoasis/vim-devicons' " NERDTree显示文件icon
+Plug 'ryanoasis/vim-devicons' " NERDTree显示文件icon 需要安装字体:https://github.com/ryanoasis/nerd-fonts#option-4-homebrew-fonts
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 " gcc: 注释或反注释 gcap: 注释一段 gc: visual 模式下直接注释所有已选择的行
