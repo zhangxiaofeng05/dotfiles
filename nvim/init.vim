@@ -58,7 +58,7 @@ Plug 'junegunn/fzf.vim' " :Rg $ brew install ripgrep :Ag $ brew install the_silv
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 
-Plug 'SirVer/ultisnips' " https://github.com/SirVer/ultisnips
+" Plug 'SirVer/ultisnips' " https://github.com/SirVer/ultisnips
 
 " go development: 目前使用coc替代
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
@@ -105,6 +105,7 @@ call plug#end()
 colorscheme gruvbox8
 
 let g:python3_host_prog = '/usr/bin/python3'
+" need run $ python3 -m pip install --user --upgrade pynvim
 inoremap jk <esc>
 
 augroup filetype_vim
