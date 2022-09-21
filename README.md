@@ -18,6 +18,9 @@ ln -s ~/openSource/dotfiles/nvim/ ~/.config/nvim
 ### ln
 ```
 ln -s ~/openSource/dotfiles/.gitconfig ~/.gitconfig
+
+(可选-lazygit)
+ln -s ~/openSource/dotfiles/lazygit/config.yml ~/Library/Application\ Support/lazygit/config.yml
 ```
 
 ## tmux

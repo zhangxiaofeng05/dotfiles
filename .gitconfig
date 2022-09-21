@@ -1,3 +1,7 @@
+[user]
+	name = zhangxiaofeng05
+	email = zhangxiaofeng05@foxmail.com
+# $ brew install git-delta
 [core]
     pager = delta
 
