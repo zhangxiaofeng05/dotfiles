@@ -1,4 +1,9 @@
 ## nvim
+```
+brew install neovim
+
+python3 -m pip install --user --upgrade pynvim
+```
 ### clone
 ```
 mkdir ~/openSource && cd ~/openSource
