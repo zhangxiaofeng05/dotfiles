@@ -24,7 +24,7 @@ Plug 'mhinz/vim-startify'
 Plug 'kdheepak/lazygit.nvim'
 
 " mulit colorscheme
-" Plug 'rafi/awesome-vim-colorschemes'
+Plug 'rafi/awesome-vim-colorschemes'
 Plug 'lifepillar/vim-gruvbox8'
 " terminal
 Plug 'voldikss/vim-floaterm'
@@ -100,9 +100,9 @@ call plug#end()
 " global
 " 设置主题 主题如果放在coc后边，会覆盖coc.nvim中的popup menu颜色
 " set background=dark
-" colorscheme gruvbox
+colorscheme gruvbox
 " colorscheme PaperColor
-colorscheme gruvbox8
+" colorscheme gruvbox8
 
 let g:python3_host_prog = '/usr/bin/python3'
 " need run $ python3 -m pip install --user --upgrade pynvim
