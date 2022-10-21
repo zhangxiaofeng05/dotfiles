@@ -25,7 +25,7 @@ ln -s ~/openSource/dotfiles/nvim/ ~/.config/nvim
 ```
 ln -s ~/openSource/dotfiles/.gitconfig ~/.gitconfig
 
-(可选-lazygit)
+(optional-lazygit)
 ln -s ~/openSource/dotfiles/lazygit/config.yml ~/Library/Application\ Support/lazygit/config.yml
 ```
 
@@ -33,4 +33,12 @@ ln -s ~/openSource/dotfiles/lazygit/config.yml ~/Library/Application\ Support/la
 ### ln
 ```
 ln -s ~/openSource/dotfiles/.tmux.conf ~/.tmux.conf
+```
+
+## lepton
+### ln
+```
+(optional)
+# https://github.com/hackjutsu/Lepton/wiki/FAQ
+ln -s ~/openSource/dotfiles/.leptonrc ~/.leptonrc
 ```
