@@ -2,6 +2,7 @@
 ```
 brew install node
 brew install neovim
+npm install -g neovim
 
 python3 -m pip install --user --upgrade pynvim
 ```
