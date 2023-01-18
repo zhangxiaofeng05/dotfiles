@@ -21,6 +21,10 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 ln -s ~/openSource/dotfiles/nvim/ ~/.config/nvim
 ```
 
+## recommand
+ - [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
+ - [powerlevel10k](https://github.com/romkatv/powerlevel10k)
+
 ## git
 ### ln
 ```
