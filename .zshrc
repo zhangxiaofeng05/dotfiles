@@ -6,14 +6,21 @@ plugins=(
 	# other plugins
 	brew
 	tmux
+	# https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh
 	zsh-autosuggestions
 	docker
 	docker-compose
+	kubectl
 	gh
+	web-search
+	# https://github.com/nvbn/thefuck#installation
+	thefuck
 )
 
 # brew
 eval "$(/opt/homebrew/bin/brew shellenv)"
+# https://github.com/nvbn/thefuck#installation
+eval $(thefuck --alias)
 
 # nvim
 alias vim="nvim"
