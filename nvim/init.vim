@@ -61,7 +61,7 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
 " Plug 'SirVer/ultisnips' " https://github.com/SirVer/ultisnips
 
 " go development: 目前使用coc替代
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+" Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " 补全代码
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " 支持python补全 :CocInstall coc-pyright
@@ -168,29 +168,29 @@ nmap gu <Plug>(GitGutterUndoHunk)
 " }}}
 
 " vim-go {{{
-let g:go_highlight_types = 1
-let g:go_highlight_fields = 1
-let g:go_highlight_functions = 1
-let g:go_highlight_function_calls = 1
-let g:go_highlight_operators = 1
-let g:go_highlight_extra_types = 1
-let g:go_highlight_build_constraints = 1
-let g:go_highlight_generate_tags = 1
+" let g:go_highlight_types = 1
+" let g:go_highlight_fields = 1
+" let g:go_highlight_functions = 1
+" let g:go_highlight_function_calls = 1
+" let g:go_highlight_operators = 1
+" let g:go_highlight_extra_types = 1
+" let g:go_highlight_build_constraints = 1
+" let g:go_highlight_generate_tags = 1
 " 跳转到 下一个/上一个quickfix位置
-noremap <C-n> :cnext<CR>
-noremap <C-p> :cprevious<CR>
-nnoremap <leader>a :cclose<CR>
-autocmd FileType go nmap <leader>b  <Plug>(go-build)
-autocmd FileType go nmap <leader>r  <Plug>(go-run)
-let g:go_list_type = "quickfix"
-autocmd FileType go nmap <leader>t  <Plug>(go-test)
-autocmd FileType go nmap <Leader>c <Plug>(go-coverage-toggle)
-let g:go_fmt_command = "goimports"
-autocmd Filetype go command! -bang A call go#alternate#Switch(<bang>0, 'edit')
-autocmd Filetype go command! -bang AV call go#alternate#Switch(<bang>0, 'vsplit')
-autocmd Filetype go command! -bang AS call go#alternate#Switch(<bang>0, 'split')
-autocmd Filetype go command! -bang AT call go#alternate#Switch(<bang>0, 'tabe')
-autocmd FileType go nmap <Leader>i <Plug>(go-info)
+" noremap <C-n> :cnext<CR>
+" noremap <C-p> :cprevious<CR>
+" nnoremap <leader>a :cclose<CR>
+" autocmd FileType go nmap <leader>b  <Plug>(go-build)
+" autocmd FileType go nmap <leader>r  <Plug>(go-run)
+" let g:go_list_type = "quickfix"
+" autocmd FileType go nmap <leader>t  <Plug>(go-test)
+" autocmd FileType go nmap <Leader>c <Plug>(go-coverage-toggle)
+" let g:go_fmt_command = "goimports"
+" autocmd Filetype go command! -bang A call go#alternate#Switch(<bang>0, 'edit')
+" autocmd Filetype go command! -bang AV call go#alternate#Switch(<bang>0, 'vsplit')
+" autocmd Filetype go command! -bang AS call go#alternate#Switch(<bang>0, 'split')
+" autocmd Filetype go command! -bang AT call go#alternate#Switch(<bang>0, 'tabe')
+" autocmd FileType go nmap <Leader>i <Plug>(go-info)
 " }}}
 
 "coc {{{
