@@ -6,3 +6,5 @@ yarn --version
 python3 --version
 # https://github.com/universal-ctags/ctags
 ctags --version
+# brew install tree
+tree --version

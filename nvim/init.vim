@@ -56,7 +56,8 @@ Plug 'junegunn/fzf.vim' " :Rg $ brew install ripgrep :Ag $ brew install the_silv
 " https://github.com/dandavison/delta  $ brew install git-delta
 " telescope 用着还不错，后续考虑替代掉fzf.vim https://github.com/nvim-telescope/telescope.nvim
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.x' }
+" telescope 依赖:https://github.com/BurntSushi/ripgrep#installation  https://github.com/sharkdp/fd#on-macos
 
 " Plug 'SirVer/ultisnips' " https://github.com/SirVer/ultisnips
 
@@ -64,13 +65,14 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
 " Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " 补全代码
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" 支持python补全 :CocInstall coc-pyright
+" golang :CocInstall coc-go
+" " 支持python补全 :CocInstall coc-pyright
 " tabline :CocInstall coc-tabnine
 " go to definition for protobuf messages :CocInstall coc-protobuf
 " json :CocInstall coc-json
 " vimscript :CocInstall coc-vimlsp
 " toml :CocInstall coc-toml
-Plug 'honza/vim-snippets' " snippets with Coc: run command(CocInstall coc-snippets)
+Plug 'honza/vim-snippets' "coc-snippets :CocInstall coc-snippets (https://github.com/neoclide/coc-snippets)
 Plug 'sbdchd/neoformat' " format code
 Plug 'preservim/tagbar' "Tagbar: a class outline viewer for Vim
 " go: Struct split and join  gS:split  gJ:join
@@ -263,6 +265,12 @@ nmap <leader>cl  <Plug>(coc-codelens-action)
 " NOTE: Please see `:h coc-status` for integrations with external plugins that
 " provide custom statusline: lightline.vim, vim-airline.
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+
+" coc-go https://github.com/josa42/coc-go
+autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
+autocmd FileType go nmap gtj :CocCommand go.tags.add json<cr>
+autocmd FileType go nmap gty :CocCommand go.tags.add yaml<cr>
+autocmd FileType go nmap gtx :CocCommand go.tags.clear<cr>
 " }}}
 
 " Yggdroot/indentLine 支持golang
