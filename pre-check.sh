@@ -8,3 +8,8 @@ python3 --version
 ctags --version
 # brew install tree
 tree --version
+# https://github.com/prettier/prettier
+# npm -g install prettier
+prettier --version
+# https://github.com/jesseduffield/lazygit
+lazygit --version
