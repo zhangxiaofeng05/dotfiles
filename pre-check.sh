@@ -30,4 +30,13 @@ else
 	exit 1
 fi
 
+# https://formulae.brew.sh/formula/telnet
+# telnet localhost 8080
+# mac native support netcat: nc -vz localhost 8080
+if type telnet > /dev/null 2>&1; then
+	echo '[option]: telnet command exist'
+else
+	echo '[option]: telnet command not exist'
+fi
+
 echo -e '\nfinish check!!!'
