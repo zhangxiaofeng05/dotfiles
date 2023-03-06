@@ -21,7 +21,7 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 ln -s ~/openSource/dotfiles/nvim/ ~/.config/nvim
 ```
 
-## recommand
+## recommend
  - [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh)
  - [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 
@@ -46,4 +46,10 @@ ln -s ~/openSource/dotfiles/.tmux.conf ~/.tmux.conf
 (optional)
 # https://github.com/hackjutsu/Lepton/wiki/FAQ
 ln -s ~/openSource/dotfiles/.leptonrc ~/.leptonrc
+```
+
+## others[optional]
+```shell
+# coreutils
+brew install coreutils
 ```
