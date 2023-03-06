@@ -21,6 +21,8 @@ tldr --version
 hugo version
 # https://github.com/soimort/you-get#installation
 you-get --version
+# https://formulae.brew.sh/formula/jq
+jq --version
 
 # https://github.com/commitizen/cz-cli#conventional-commit-messages-as-a-global-utility
 if type commitizen > /dev/null 2>&1; then
