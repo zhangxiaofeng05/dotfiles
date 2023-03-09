@@ -302,8 +302,8 @@ let g:ale_fixers = {
       \ 'go': ['gofmt'],
       \ 'rust': ['rustfmt'],
       \ 'kotlin': ['ktlint'],
-      \ 'javascript': ['eslint'],
-      \ 'typescript': ['tslint'],
+      \ 'javascript': ['prettier'],
+      \ 'typescript': ['prettier'],
       \ 'typescriptreact': ['prettier'],
       \ }
 let g:ale_fix_on_save = 1
