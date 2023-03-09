@@ -65,11 +65,13 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.x' }
 " Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " 补全代码
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" golang :CocInstall coc-go
-" " 支持python补全 :CocInstall coc-pyright
+let g:coc_global_extensions = [
+	\ 'coc-go',
+	\ 'coc-json',
+	\ 'coc-pyright',
+	\ ]
 " tabline :CocInstall coc-tabnine
 " go to definition for protobuf messages :CocInstall coc-protobuf
-" json :CocInstall coc-json
 " vimscript :CocInstall coc-vimlsp
 " toml :CocInstall coc-toml
 Plug 'honza/vim-snippets' "coc-snippets :CocInstall coc-snippets (https://github.com/neoclide/coc-snippets)
