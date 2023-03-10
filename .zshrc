@@ -11,6 +11,7 @@ plugins=(
 	docker
 	docker-compose
 	kubectl
+	nvm
 	gh
 	web-search
 	# https://github.com/nvbn/thefuck#installation
