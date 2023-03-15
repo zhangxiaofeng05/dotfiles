@@ -25,7 +25,9 @@ you-get --version
 jq --version
 # https://formulae.brew.sh/formula/autojump
 # others https://formulae.brew.sh/formula/z
-j --version
+autojump --version # $ j --version
+# https://github.com/AlDanial/cloc
+cloc --version
 
 # https://github.com/commitizen/cz-cli#conventional-commit-messages-as-a-global-utility
 if type commitizen > /dev/null 2>&1; then
