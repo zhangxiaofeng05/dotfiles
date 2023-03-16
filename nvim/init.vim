@@ -67,6 +67,7 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.x' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 let g:coc_global_extensions = [
 	\ 'coc-go',
+	\ 'coc-rust-analyzer',
 	\ 'coc-json',
 	\ 'coc-pyright',
 	\ ]
@@ -74,6 +75,7 @@ let g:coc_global_extensions = [
 " go to definition for protobuf messages :CocInstall coc-protobuf
 " vimscript :CocInstall coc-vimlsp
 " toml :CocInstall coc-toml
+Plug 'rust-lang/rust.vim'
 Plug 'honza/vim-snippets' "coc-snippets :CocInstall coc-snippets (https://github.com/neoclide/coc-snippets)
 Plug 'sbdchd/neoformat' " format code
 Plug 'preservim/tagbar' "Tagbar: a class outline viewer for Vim
