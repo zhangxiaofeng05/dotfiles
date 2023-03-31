@@ -28,6 +28,8 @@ jq --version
 autojump --version # $ j --version
 # https://github.com/AlDanial/cloc
 cloc --version
+# https://formulae.brew.sh/formula/clang-format
+clang-format --version
 
 # https://github.com/commitizen/cz-cli#conventional-commit-messages-as-a-global-utility
 if type commitizen > /dev/null 2>&1; then
