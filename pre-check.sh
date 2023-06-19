@@ -32,6 +32,8 @@ cloc --version
 clang-format --version
 # https://formulae.brew.sh/formula/neofetch
 neofetch --version
+# brew install coreutils
+md5sum --version
 
 # https://github.com/commitizen/cz-cli#conventional-commit-messages-as-a-global-utility
 if type commitizen > /dev/null 2>&1; then
