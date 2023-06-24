@@ -34,6 +34,8 @@ clang-format --version
 neofetch --version
 # brew install coreutils
 md5sum --version
+# brew install mysql-client
+mysql --version
 
 # https://github.com/commitizen/cz-cli#conventional-commit-messages-as-a-global-utility
 if type commitizen > /dev/null 2>&1; then
