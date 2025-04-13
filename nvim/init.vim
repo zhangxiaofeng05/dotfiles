@@ -76,7 +76,7 @@ let g:coc_global_extensions = [
 " vimscript :CocInstall coc-vimlsp
 " toml :CocInstall coc-toml
 Plug 'rust-lang/rust.vim'
-Plug 'honza/vim-snippets' "coc-snippets :CocInstall coc-snippets (https://github.com/neoclide/coc-snippets)
+" Plug 'honza/vim-snippets' "coc-snippets :CocInstall coc-snippets (https://github.com/neoclide/coc-snippets)
 Plug 'sbdchd/neoformat' " format code
 Plug 'preservim/tagbar' "Tagbar: a class outline viewer for Vim
 " go: Struct split and join  gS:split  gJ:join
